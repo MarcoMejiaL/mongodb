@@ -1,0 +1,26 @@
+use("prueba")
+
+/* db.plaztzi.drop(); */
+db.plaztzi.insertMany([
+    {
+        _id:1,
+        name:"marco",
+        edad: 33
+    },
+    {
+        _id:2,
+        name:"yadira",
+        edad:34
+    },
+    {
+        _id:3,
+        name:"barby",
+        edad:13,
+
+    },
+    {
+        _id:4,
+        name:"elizabeth",
+        edad:5
+    }
+])

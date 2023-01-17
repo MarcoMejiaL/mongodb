@@ -1,0 +1,7 @@
+use("prueba")
+
+db.plaztzi.insertOne({
+    
+    name:"marco",
+    edad: 33
+})
