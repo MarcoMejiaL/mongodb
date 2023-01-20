@@ -1,0 +1,11 @@
+use("prueba")
+
+db.comparadores.updateMany(
+    {qty:{$ne:20}},
+{
+    $inc:{    qty:10
+}
+}
+
+
+)

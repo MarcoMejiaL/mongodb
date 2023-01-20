@@ -1,0 +1,16 @@
+use("prueba")
+
+// $eq
+
+/* db.comparadores.find({qty:20},) */
+/* db.comparadores.find({"item.code":"123"}) */
+/* db.comparadores.find({"item.code":{$eq:"123"}}) */
+
+db.comparadores.find(
+    {
+        qty:
+        {
+            $ne:20
+        }
+    }
+)

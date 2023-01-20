@@ -1,0 +1,4 @@
+use("prueba")
+
+
+db.operadores.find({qty:{$gte:25}})
