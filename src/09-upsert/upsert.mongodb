@@ -1,0 +1,32 @@
+use("prueba")
+/* db.store.updateOne({
+    sensor: "A001",
+    date:"2022-01-01"
+},
+{
+    $push:{
+        readings:2323
+    }
+}
+) */
+/* db.store.updateOne({
+    sensor: "A001",
+    date:"2022-01-01"
+},
+{
+    $pop:{
+        readings:1
+    }
+}) */
+db.store.updateOne({
+    sensor: "A001",
+    date:"2022-01-04"
+},
+{
+    $push:{
+        readings:54321
+    }
+},
+{
+    upsert:true
+})

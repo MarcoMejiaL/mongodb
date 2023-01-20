@@ -1,2 +1,2 @@
 use("prueba")/* aqui se utiliza la DB que esta conectada */
-db.plaztzi.find({name:"marco"}) /* find busca y envias el parametro de busqueda */
+db.plaztzi.find() /* find busca y envias el parametro de busqueda */

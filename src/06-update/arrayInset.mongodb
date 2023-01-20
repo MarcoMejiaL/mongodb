@@ -1,0 +1,7 @@
+use("prueba")
+
+db.plaztzi.updateOne({_id:2},{
+    $push:({
+        tags:"paquito"
+    })
+})

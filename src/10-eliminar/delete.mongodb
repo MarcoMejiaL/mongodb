@@ -1,0 +1,3 @@
+use("prueba")
+
+db.itemsDos.deleteOne({ _id:1})

@@ -1,0 +1,12 @@
+use("prueba")
+
+db.plaztzi.updateOne(
+    //query
+    {_id:1},
+    //cambio
+    {
+        $set:{
+            name:"paquito"
+        }
+    }
+)
