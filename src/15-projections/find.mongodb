@@ -1,0 +1,6 @@
+use("prueba")
+
+db.inventory.find(
+    {},
+    {"item.code":true,"item.description":true}
+)
