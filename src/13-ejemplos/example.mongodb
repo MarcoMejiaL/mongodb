@@ -1,0 +1,14 @@
+use("prueba")
+
+db.store.updateMany(
+    //query
+    {sensor:"A001"},
+    //update
+    {
+        $pull:{ 
+            readings:{$gte:3}
+        }
+    }
+
+
+)

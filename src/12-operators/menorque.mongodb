@@ -1,4 +1,13 @@
 use("prueba")
 
 
-db.operadores.find({qty:{$gte:25}})
+/* db.operadores.find({qty:{$gt:25}}) MAYOR QUE */
+/* db.operadores.find({qty:{$gte:25}}) MAYOR IGUAL QUE */
+/* db.operadores.find({qty:{$lt:25}}) MENOR QUE */
+/* db.operadores.find({qty:{$lte:25}}) MENOR IGUAL QUE */
+
+/* JOIN */
+
+db.operadores.find({
+    qty:{$gte:25,$lte:35}
+})
