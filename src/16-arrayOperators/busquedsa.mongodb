@@ -1,0 +1,14 @@
+use("prueba")
+
+//$in, obj $ arrays
+/* db.array.find( {qty:{$in: [20,25]}}) */
+//$nin
+/* db.array.find( {qty:{$nin: [20,25]}}) */
+
+/* db.array.find({tags:"book"}) */
+//array 
+//$all 
+/* db.array.find({tags:{$all:["book", "school"]}}) */
+//size
+/* db.array.find({tags:{$size:2}}) */
+db.survey.find({results:{$elemMatch:{product:{$regex:/XYZ/i},score:{$gte:7}}}})
